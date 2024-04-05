@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    background-color: black;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+.list {
+    display: flex;
+    position: relative;
+    left: 40px;
+    color: white;
+    transition: 0.7s;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 17px 20px;
+    padding: 4px;
+    float: left;
+    &:hover{
+        color: red;
+    }
+        
+
+    }
+
+.img{
+    background-image: url(../img/hero_02.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.btn_div {
+    background-color: black;
+    width: 100%;
+    height: 700px;
+}
+.btn_start{
+    border: 1px solid red;
+    padding: 20px 40px;
+    margin: 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.btn_start::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.7s;
+}
+.btn_start:hover::after{
+    width: 100%;
+}
+.icon-list{
+display: flex;
+font-size: 19px;
+gap: 5px;
+color: white;
+}
+
+.first {
+    background-image: url("/src/img/hero_02.jpg");
+    height: 100%;
+    background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 40% 100%;
+ }
